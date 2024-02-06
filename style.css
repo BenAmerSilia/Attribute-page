@@ -1,0 +1,302 @@
+body{
+    background-color: rgb(70, 64, 64);
+}
+
+/* Customize the scroll bar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scroll bar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scroll bar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scroll bar thumb */
+}
+
+/* Customize the scroll behavior */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Optional: Customize the scroll snap behavior for sections */
+section {
+  scroll-snap-align: start; /* Align sections to the start of the viewport */
+  scroll-snap-stop: always; /* Ensure sections snap to the viewport */
+}
+
+
+
+/* Navigation Bar Styles */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97.9%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0.75rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 100px;
+  }
+#title {
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav .page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    list-style: none;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #f5eeee;
+    color: #333;
+}
+
+/*container style*/
+.main {
+  margin-top: 10rem;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+#img-div {
+  text-align: center; /* Center its content horizontally */
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  width: 275px;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-caption {
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+.img-caption p {
+  font-family: "Lucida Handwriting", cursive;
+}
+
+
+/*about style*/
+.about {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  
+  .about p {
+ 
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+
+  .biography {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .biography h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  /* Flex container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Flex item */
+.flex-item {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: rgb(70, 64, 64);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: #f0f0f0;
+  box-sizing: border-box;
+  width: calc(33.33% - 20px);
+  height: 300px; /* Adjust the height as needed */
+}
+
+
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: calc(49% - 20px);
+    width: calc(49% - 20px);
+  }
+}
+@media  (max-width: 1040px) {
+  .flex-item{
+    height: 320px;
+  }
+}
+
+@media (max-width: 240px){
+  .flex-item {
+    flex-basis: 50%; /* Each item takes 50% width of the container */
+    height: 240px; 
+  }
+
+}
+
+
+
+.flex-item h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+      font-family: "Montserrat", sans-serif;
+
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+
+
+.flex-item li {
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  font-size: 1rem;
+  line-height: 1.5 solid;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.flex-item p {
+  margin: 0;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  line-height: 1.5 solid;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.text{
+  margin: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding-top: 0.75em;
+  font-size: 2rem;
+  line-height: 2em ;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  
+}
+
+.albums {
+  width: 99%;
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.albums h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.flex-container1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-item1 {
+  flex-basis: 22%;
+  padding: 1em;
+  background-color: rgb(70, 64, 64);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.flex-item1 h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 0;
+  color: #f0f0f0;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.flex-item1 img {
+  width: 100%;
+  height: 300px; /* Adjust the desired height */
+  object-fit: cover; /* Preserve aspect ratio and fill the container */
+}
